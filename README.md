@@ -1,1 +1,1 @@
-# jeakwon-jeakwon.github.io
+# jeakwon.github.io
