@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "Jea Kwon"
+title                    : "Eat, Sleep, Code, Coffee"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Jea Kwon"
@@ -95,7 +95,7 @@ analytics:
 author:
   name             : "Jea Kwon"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "**eat-sleep-code-coffee**\n an infinite loop"
+  bio              : "An infinite loop of **ESCC"
 #   location         : "Korea"
   email            :
   links:
