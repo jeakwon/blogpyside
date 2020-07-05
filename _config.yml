@@ -16,11 +16,11 @@ minimal_mistakes_skin    : "default" # "default" "air", "aqua", "contrast", "dar
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "Eat Sleep Code Coffee"
+title                    : "Coffee Fondant"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Jea Kwon"
-description              : "eat, sleep, code, coffee"
+description              : "Eat Sleep Code Coffee"
 url                      : "https://jeakwon.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -94,8 +94,8 @@ analytics:
 # Site Author
 author:
   name             : "Jea Kwon"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Caffeine addict"
+  avatar           : "/assets/images/coffe-fondant.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "Coffee Fondant"
 #   location         : "Korea"
   email            :
   links:
