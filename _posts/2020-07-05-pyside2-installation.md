@@ -28,6 +28,5 @@ apt-get install python3-pyside2
 
 
 # 참고
-[Official Link](www.learnpyqt.com){: .btn .btn--inverse}
-This post was written based on Martin Fitzpatrick's Create GUI Applications with QT & Python - PySide2
+* This post was written based on Martin Fitzpatrick's Create GUI Applications with QT & Python - PySide2 [Official Link](www.learnpyqt.com){: .btn .btn--inverse}
 
