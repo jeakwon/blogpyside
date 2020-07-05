@@ -40,7 +40,7 @@ python main.py
 ```
 python3 main.py
 ```
-![](/assets/images/create-app-app1py.png =250x)
+![](./assets/images/create-app-app1py.png =250x)
 
 # 참고
 * This post was written based on Martin Fitzpatrick's Create GUI Applications with QT & Python - PySide2 [Official Link](www.learnpyqt.com){: .btn .btn--inverse}
