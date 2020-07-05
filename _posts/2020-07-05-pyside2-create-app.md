@@ -35,7 +35,7 @@ python app1.py
 python3 app1.py
 ```
 
-{% include figure image_path="/assets/images/2020-07-05-pyside2-create-app-img1.png" caption="window에서 app1.py 실행 후 모습" %}
+{% include figure image_path="/assets/images/2020-07-05-pyside2-create-app/img1.png" caption="window에서 app1.py 실행 후 모습" %}
 
 ### 살펴보기
 ```python 
@@ -80,7 +80,7 @@ Qt는 최상위레벨 위젯을 상속하여 다음 레벨의 위젯을 구성�
 이벤트 루프의 핵심은 `QApplication` 클래스에 있다. App이 기능하기위해서 꼭 필수적이며 오직 하나만 필요하다. 이 객체는 모든 GUI와 사용자간의 모든 상호작용을 관장한다.
 
 
-{% include figure image_path="/assets/images/2020-07-05-pyside2-create-app-img2.png" caption="window에서 Qt에서의 이벤트 " %}
+{% include figure image_path="/assets/images/2020-07-05-pyside2-create-app/img2.png" caption="window에서 Qt에서의 이벤트 " %}
 
 # 참고
 * This post was written based on Martin Fitzpatrick's Create GUI Applications with QT & Python - PySide2 [Official Link](www.learnpyqt.com){: .btn .btn--inverse}
