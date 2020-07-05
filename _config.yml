@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "default" # "default" "air", "aqua", "contrast", "dar
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "Coffee Fondant"
+title                    : "Cafe Fondant"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Jea Kwon"
@@ -94,8 +94,8 @@ analytics:
 # Site Author
 author:
   name             : "Jea Kwon"
-  avatar           : "/assets/images/coffe-fondant.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Coffee Fondant"
+  avatar           : "/assets/images/cafe-fondant.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "cafe Fondant"
 #   location         : "Korea"
   email            :
   links:
