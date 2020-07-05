@@ -14,7 +14,7 @@ header:
 
 # Creating Basic Pyside2 Application
 ## 1. 창만들기
-**`main.py`**
+**main.py**
 ```python
 import sys
 from PySide2.QtWidgets import QApplication, QWdiget
