@@ -85,10 +85,10 @@ sys.exit(app.exec_())
 {% include figure image_path="/assets/images/2020-07-05-pyside2-create-app/img2.png" caption="window에서 Qt에서의 이벤트 " %}
 
 **QApplication Class**  
-@ `Qapplication`은 Qt Event Loop을 잡아둔다  
-@ 하나의 `QApplication` 객체만 필요하다  
-@ 액션이 취해지기 전까지 이벤트루프는 기다린다  
-@ 언제든 단 하나의 이벤트 루프만 존재한다
+@ `Qapplication`은 Qt Event Loop을 잡아둔다.  
+@ 하나의 `QApplication` 객체만 필요하다.  
+@ 액션이 취해지기 전까지 이벤트루프는 기다린다.  
+@ 언제든 단 하나의 이벤트 루프만 존재한다.
 {: .notice--info}
 
 ## 2. QMainWindow
@@ -222,8 +222,8 @@ class MainWindow(QMainWindow):
 
 **사이즈에 관한 사실**  
 @ `.setFixedSize()`이외에도 `.setMinimumSize()`, `setMaximumSize` 등을 사용할 수 있다.  
-@ 어떤 위젯이든 size를 변경할 수 있다.
-@ 위젯의 사이즈를 고정하는 경우엔 화면을 꽉채워도 위젯의 크기는 고정된다
+@ 어떤 위젯이든 size를 변경할 수 있다.  
+@ 위젯의 사이즈를 고정하는 경우엔 화면을 꽉채워도 위젯의 크기는 고정된다.
 {: .notice--info}
 
 # 참고
