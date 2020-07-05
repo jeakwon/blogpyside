@@ -112,8 +112,9 @@ sys.exit(app.exec_())
 **QMainWindow**  
 QMainWindow에는 미리 만들어진 여러 위젯들이 이미 포함되어 있다.  
 Toolbars, Menus, Statusbars, Dockable Widgets, etc.
+{: .notice--info}
 
-### QMainWidnow - 기본형태
+### QMainWidnow의 기본형태
 #### 소스코드
 **app3.py**
 ```python
@@ -127,8 +128,8 @@ sys.exit(app.exec_())
 ```
 기본적으로 큰 틀은 전혀 바뀐게 없지만, QMainWindow 클래스를 커스터마이징을 통해 버튼위젯을 포함시켜보자
 
-### QMainWindow - 커스터마이징
-#### 소스코드
+### 커스터마이징 - 버튼추가
+#### 소스코드 및 실행 결과
 **app4.py**
 ```python
 import sys
@@ -149,6 +150,9 @@ win = MainWindow()
 win.show()
 sys.exit(app.exec_())
 ```
+
+{% include figure image_path="/assets/images/2020-07-05-pyside2-create-app/img3.png" caption="app4.py 실행 결과" %}
+
 #### 살펴보기
 ```python
 from PySide2.QtWidgets import QApplication, QMainWindow, QPushButton
@@ -174,7 +178,53 @@ class MainWindow(QMainWindow):
 ```
 MainWindow의 중심위젯에 생성한 버튼 위젯을 지정해 준다.
 
-{% include figure image_path="/assets/images/2020-07-05-pyside2-create-app/img3.png" caption="app4.py 실행 결과" %}
+
+### 커스터마이징 - 사이즈조절
+#### 소스코드 및 실행 결과
+**app5.py**
+```python
+import sys
+from PySide2.QtWidgets import QApplication, QMainWindow, QPushButton
+from PySide2.QtCore import QSize
+
+class MainWindow(QMainWindow):
+    def __init__(self):
+        super().__init__()
+
+        self.setWindowTitle("앱")
+        btn = QPushButton("클릭")
+        self.setCentralWidget(btn)        
+        
+        self.setFixedSize(QSize(200, 400)) 
+
+
+app = QApplication(sys.argv)
+win = MainWindow()
+win.show()
+sys.exit(app.exec_())
+```
+
+{% include figure image_path="/assets/images/2020-07-05-pyside2-create-app/img4.png" caption="app4.py vs app5.py 실행 결과 비교" %}
+
+#### 살펴보기
+```python
+from PySide2.QtCore import QSize
+```
+`QSize`를 이용해 QtWiget의 사이즈 변경시 전달 하는 객체이다. 형식은 `QSize(가로, 세로)`. 
+
+```python
+class MainWindow(QMainWindow):
+    def __init__(self):
+        # ...
+        self.setFixedSize(QSize(200, 400)) 
+```
+위 `QSize`객체를 이용해 `self.setFixedSize()`에 전달하여 창의 크기를 변경해준다.
+
+**사이즈에 관한 사실**  
+@ `.setFixedSize()`이외에도 `.setMinimumSize()`, `setMaximumSize` 등을 사용할 수 있다.  
+@ 어떤 위젯이든 size를 변경할 수 있다.
+@ 위젯의 사이즈를 고정하는 경우엔 화면을 꽉채워도 위젯의 크기는 고정된다
+{: .notice--info}
 
 # 참고
 * This post was written based on Martin Fitzpatrick's Create GUI Applications with QT & Python - PySide2 [Official Link](www.learnpyqt.com){: .btn .btn--inverse}
