@@ -13,7 +13,7 @@ header:
 이번 포스트에서는 데스크톱에 PySide2로 Qt App을 생성해 보자.
 
 # Creating Basic Pyside2 Application
-## 1. 창만들기
+## 1. 기본 구성
 **main.py**
 ```python
 import sys
