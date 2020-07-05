@@ -40,6 +40,7 @@ python main.py
 ```
 python3 main.py
 ```
+{% include figure image_path="/assets/images/create-app-app1py.png" alt="create-app-app1py.png" caption="실행 후 " %}
 
 # 참고
 * This post was written based on Martin Fitzpatrick's Create GUI Applications with QT & Python - PySide2 [Official Link](www.learnpyqt.com){: .btn .btn--inverse}
