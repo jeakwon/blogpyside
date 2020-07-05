@@ -83,10 +83,10 @@ Qt는 최상위레벨 위젯을 상속하여 다음 레벨의 위젯을 구성�
 {% include figure image_path="/assets/images/2020-07-05-pyside2-create-app/img2.png" caption="window에서 Qt에서의 이벤트 " %}
 
 **QApplication Class**  
-+ `Qapplication`은 Qt Event Loop을 잡아둔다  
-+ 하나의 `QApplication` 객체만 필요하다  
-+ 액션이 취해지기 전까지 이벤트루프는 기다린다  
-+ 언제든 단 하나의 이벤트 루프만 존재한다
+@ `Qapplication`은 Qt Event Loop을 잡아둔다  
+@ 하나의 `QApplication` 객체만 필요하다  
+@ 액션이 취해지기 전까지 이벤트루프는 기다린다  
+@ 언제든 단 하나의 이벤트 루프만 존재한다
 {: .notice--info}
 
 ## 2. QMainWindow
