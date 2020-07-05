@@ -11,6 +11,7 @@ header:
 ---
 
 이번 포스트에서는 데스크톱에 PySide2로 Qt App을 생성해 보자.
+[소스코드](https://github.com/jeakwon/pyside2/tree/master/1.create-app){: .btn .btn--inverse}
 
 # Create Basic Pyside2 App
 ## 1. Basic App
