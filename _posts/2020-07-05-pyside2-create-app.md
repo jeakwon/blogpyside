@@ -90,8 +90,30 @@ Qt는 최상위레벨 위젯을 상속하여 다음 레벨의 위젯을 구성�
 {: .notice--info}
 
 ## 2. QMainWindow
-### 소스코드 및 실행
+### QMainWindow를 사용하는 이유
+예를들어 버튼 위젯을 만들고 싶다고 한다면 위에서 작성한 코드에서 `QWidget`을 `QPushButton`으로 바꾸는 것만으로 PushButton App을 볼 수 있다. 
 **app2.py**
+```python
+import sys
+from PySide2.QtWidgets import QApplication, QPushButton
+
+app = QApplication(sys.argv)
+win = QPushButton("클릭")
+win.show()
+sys.exit(app.exec_())
+```
+매우 간단하지만, 사실 그다지 쓸모있지는 않다. 왜냐하면 단순히 하나의 컨트롤만 가능한 UI를 만드는 것이 목적이
+아니기 때문이다. 따라서 서로 다른 기능을 가진 다양한 위젯을 하나에 담을 공간이 필요한데, 이를 레이아웃`layout`
+이라 한다. QWidget라는 텅 빈 위젯에 다양한 UI들을 담을 수도 있겠지만, 이미 Qt는 이러한 레이아웃 역할을 해줄
+`QMainWindow`를 제공하고 있다.
+
+**QMainWindow**  
+QMainWindow에는 미리 만들어진 여러 위젯들이 이미 포함되어 있다.  
+Toolbars, Menus, Statusbars, Dockable Widgets, etc.
+
+### QMainWidnow - 기본형태
+#### 소스코드
+**app3.py**
 ```python
 import sys
 from PySide2.QtWidgets import QApplication, QMainWindow
@@ -101,6 +123,56 @@ win = QMainWindow()
 win.show()
 sys.exit(app.exec_())
 ```
-`QWidget`--> `QMainWindow`
+기본적으로 큰 틀은 전혀 바뀐게 없지만, QMainWindow 클래스를 커스터마이징을 통해 버튼위젯을 포함시켜보자
+
+### QMainWindow - 커스터마이징
+#### 소스코드
+**app4.py**
+```python
+import sys
+from PySide2.QtWidgets import QApplication, QMainWindow, QPushButton
+
+class MainWindow(QMainWindow):
+    def __init__(self):
+        super().__init__()
+
+        self.setWindowTitle("앱")
+
+        btn = QPushButton("클릭")
+
+        self.setCentralWidget(btn)
+
+app = QApplication(sys.argv)
+win = MainWindow()
+win.show()
+sys.exit(app.exec_())
+```
+#### 살펴보기
+```python
+from PySide2.QtWidgets import QApplication, QMainWindow, QPushButton
+```
+대부분의 일반적인 위젯은 `QtWidgets` 에서 import 된다.
+
+```python
+class MainWindow(QMainWindow):
+    def __init__(self):
+        super().__init__()
+```
+`QMainWindow`를 상속받는 새로운 `MainWindow`클래스를 만들어 커스터마이징을 하는 경우,
+항상 상위클래스`super()`를 발동`__init__`시켜줘야 한다.
+
+```python
+        self.setWindowTitle("앱")
+        btn = QPushButton("클릭")
+```
+실행된 창의 이름을 정해주고, 새로운 버튼 위젯을 생성한다.
+
+```python
+        self.setCentralWidget(btn)
+```
+MainWindow의 중심위젯에 생성한 버튼 위젯을 지정해 준다.
+
+{% include figure image_path="/assets/images/2020-07-05-pyside2-create-app/img3.png" caption="app4.py 실행 결과" %}
+
 # 참고
 * This post was written based on Martin Fitzpatrick's Create GUI Applications with QT & Python - PySide2 [Official Link](www.learnpyqt.com){: .btn .btn--inverse}
