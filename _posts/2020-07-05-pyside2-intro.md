@@ -6,6 +6,8 @@ tags:
   - gui
   - qt
 toc: true
+header:
+  overlay_color: "#333"
 ---
 References for this post
 [Martin Fitzpatrick](www.learnpyqt.com){: .btn .btn--inverse}
