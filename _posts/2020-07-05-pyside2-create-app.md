@@ -63,11 +63,11 @@ win.show()
 ```
   `QWidget`객체를 생성한다. 그리고 `.show()`를 통해 표시한다.
 
-**모든 탑레벨 위젯은 윈도우다**
+**모든 탑레벨 위젯은 윈도우다**  
 Qt는 최상위레벨 위젯을 상속하여 다음 레벨의 위젯을 구성한다. 그런데 최상위 레벨의 위젯은 모두 창이다. 또한 기본적으로 `parent`가 존재하지 않으며 레이아웃이나 위젯에 서로가 서로에게 속박되어 있지 않다. 이 말은 어떠한 위젯을 사용하더라도 창을 만들 수 있다는 뜻이다.
 {: .notice--info}
 
-**부모 없는 위젯은 항상 히든상태**
+**부모 없는 위젯은 항상 히든상태**  
 위젯은 부모가 없으면 기본적으로 숨은 상태이다. 따라서 `.show()`를 통해서 항상 구동해줘야한다.
 {: .notice--warning}
 
@@ -80,7 +80,7 @@ Qt는 최상위레벨 위젯을 상속하여 다음 레벨의 위젯을 구성�
 이벤트 루프의 핵심은 `QApplication` 클래스에 있다. App이 기능하기위해서 꼭 필수적이며 오직 하나만 필요하다. 이 객체는 모든 GUI와 사용자간의 모든 상호작용을 관장한다.
 
 
-{% include figure image_path="/assets/images/2020-07-05-pyside2-create-app-img2.png" caption="window에서 app1.py 실행 후 모습" %}
+{% include figure image_path="/assets/images/2020-07-05-pyside2-create-app-img2.png" caption="window에서 Qt에서의 이벤트 " %}
 
 # 참고
 * This post was written based on Martin Fitzpatrick's Create GUI Applications with QT & Python - PySide2 [Official Link](www.learnpyqt.com){: .btn .btn--inverse}
