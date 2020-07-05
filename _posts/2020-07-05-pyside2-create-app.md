@@ -9,7 +9,7 @@ toc: true
 header:
   overlay_color: "#333"
 ---
-PySide2 앱을 만들어 보고, 이벤트 루프에대해서, 그리고 왜 QMainWindow를 사용하는지 알아
+PySide2 앱을 만들어 보고, 이벤트 루프에대해서, 그리고 왜 QMainWindow를 사용하는지 알아보자
 [소스코드](https://github.com/jeakwon/pyside2/tree/master/1.create-app){: .btn .btn--primary}
 
 # Create Basic Pyside2 App
