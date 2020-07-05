@@ -49,5 +49,5 @@ PEP8 : 파이썬 개선 제안서, 파이썬 코드를 어떻게 구상할 지 �
 
 
 # 참고
-**This post was written based on Martin Fitzpatrick's Create GUI Applications with QT & Python - PySide2**
-* [Official Link to Martin Fitzpatrick's learnpyqt.com](www.learnpyqt.com){: .btn .btn--inverse}
+This post was written based on Martin Fitzpatrick's Create GUI Applications with QT & Python - PySide2
+* [Official Link](www.learnpyqt.com){: .btn .btn--inverse}
