@@ -10,6 +10,7 @@ toc: true
 header:
   overlay_color: "#333"
 ---
+PySide2 설치방법
 
 # Installation of PySide2
 PyPI를 통해서 코드 한 줄로 인스톨 하는 것이 가능하다.
