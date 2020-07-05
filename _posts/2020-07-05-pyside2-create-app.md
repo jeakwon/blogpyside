@@ -12,12 +12,12 @@ header:
 
 이번 포스트에서는 데스크톱에 PySide2로 Qt App을 생성해 보자.
 
-# Creating Basic Pyside2 Application
-## 1. 기본 구성
-**main.py**
+# Create Basic Pyside2 App
+## 1. 기본 형태
+**app1.py**
 ```python
 import sys
-from PySide2.QtWidgets import QApplication, QWdiget
+from PySide2.QtWidgets import QApplication, QWidget
 
 app = QApplication(sys.argv)
 win = QWidget()
@@ -36,7 +36,7 @@ sys.exit(app.exec_())
 ```
 python main.py
 ```
-or 
+또는
 ```
 python3 main.py
 ```
