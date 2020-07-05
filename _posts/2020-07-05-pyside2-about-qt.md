@@ -27,7 +27,18 @@ Qt는 Eirik Chambe-Eng 과 Haavard Nord가 1991년에 처음 시작하였으며,
 C++로 개발된 Qt라이브러리를 wrapper로 감싸 파이썬으로 사용할 수 있게 한 것이기 때문이다.
 
 따라서, 이것은 C++라이브러리를 Python 인터페이스로 만든 것이기 때문에 naming convention은 PEP8규약을
-따르지 않는다.
+따르지 않는다. 가장 주목할 만한 것은 `snake_case`가 아니라 `mixedCase`를 이용한다는 것. 일단 코드의
+작성 규약을 무엇을 따를 것인지는 본인의 선택에 달려 있겠지만, 파이썬의 다른 라이브러리를 이용하게되면
+결국 파이썬 내에서 코드의 규약이 섞이는 일이 발생할 것이다. 만약, 파이썬 규약을 따르게 된다면, 본인의
+코드가 어디서 시작하고 어디까지가 PySide2의 코드인지 구별하는 데에 도움이 될 수 도 있다.
+
+PySide2의 전용 문서가 공식적으로 지원은 되고 있지만, Qt문서를 읽는 것이 좀 더 완성에 가까운 경우가 많다. 
+만약 Qt의 오리지널 문서를 해석해야하는 경우 아래 공식을 이용하면 도움이 될 것이다.
+| Qt             | PySide2        |
+|:--------------:|:--------------:|
+| Qt::SomeValue  | Qt.SomeValue   | 
+| object.exec()  | object.exec_() | 
+| object.print() | object.print_()| 
 
 **PEP8 Standards**  
 [Official Link](https://www.python.org/dev/peps/pep-0008/){: .btn .btn--inverse}
@@ -37,5 +48,5 @@ PEP8 : 파이썬 개선 제안서, 파이썬 코드를 어떻게 구상할 지 �
 
 
 # 참고
-**For details, go to**
-* [Martin Fitzpatrick](www.learnpyqt.com){: .btn .btn--inverse}
+**This post was written based on Martin Fitzpatrick's Create GUI Applications with QT & Python - PySide2**
+* [Official Link to Martin Fitzpatrick's learnpyqt.com](www.learnpyqt.com){: .btn .btn--inverse}
