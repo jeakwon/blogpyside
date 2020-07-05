@@ -16,7 +16,8 @@ PySide2를 공부하기 전에 간단한 GUI의 역사를 알아보자.
 * 1960, 스탠포드의 NLS(oN-Line System)이 마우스와 창이라는 컨셉을 처음 도입하였고 1968년에 이를 공식 시연함.
 * 1973, Xerox PARC Smalltalk system GUI 가 1973년도에 GUI의 **WIMP**(창, 메뉴, 라디오버튼, 체크박스, 아이콘과 같은 것)을 도입하여 기틀을 다짐
 
-**WIMP** Windows, Icon, Menu, Pointing device의 두문자
+**WIMP**  
+Windows, Icon, Menu, Pointing device의 두문자
 {: .notice}
 
 * 1979, PERQ 웍스테이션이라는 첫 GUI 상용시스템 등장.
