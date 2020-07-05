@@ -20,7 +20,7 @@ title                    : "Cafe Fondant"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Jea Kwon"
-description              : "Eat Sleep Code Coffee"
+description              : "Cafe Fondant"
 url                      : "https://jeakwon.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -93,9 +93,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "Jea Kwon"
+  name             : "Cafe Fondant(커피퐁당)"
   avatar           : "/assets/images/cafe-fondant-black.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "cafe Fondant"
+  bio              : "Eat, Sleep, Code, coffee"
 #   location         : "Korea"
   email            :
   links:
