@@ -41,7 +41,7 @@ python main.py
 python3 main.py
 ```
 
-{% include figure image_path="/assets/images/2020-07-05-pyside2-create-app-img1.png" alt="" caption="This is a figure caption." %}
+{% include figure image_path="/assets/images/2020-07-05-pyside2-create-app-img1.png" caption="after app1.py execution" %}
 
 # 참고
 * This post was written based on Martin Fitzpatrick's Create GUI Applications with QT & Python - PySide2 [Official Link](www.learnpyqt.com){: .btn .btn--inverse}
