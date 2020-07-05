@@ -221,7 +221,7 @@ class MainWindow(QMainWindow):
 위 `QSize`객체를 이용해 `self.setFixedSize()`에 전달하여 창의 크기를 변경해준다.
 
 **사이즈에 관한 사실**  
-@ `.setFixedSize()`이외에도 `.setMinimumSize()`, `setMaximumSize` 등을 사용할 수 있다.  
+@ `.setFixedSize()`이외에도 `.setMinimumSize()`, `.setMaximumSize()` 등을 사용할 수 있다.  
 @ 어떤 위젯이든 size를 변경할 수 있다.  
 @ 위젯의 사이즈를 고정하는 경우엔 화면을 꽉채워도 위젯의 크기는 고정된다.
 {: .notice--info}
