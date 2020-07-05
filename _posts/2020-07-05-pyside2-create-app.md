@@ -74,13 +74,21 @@ Qt는 최상위레벨 위젯을 상속하여 다음 레벨의 위젯을 구성�
 ```sys.exit(app.exec_())```
 `app.exec_()`로 이벤트 루프를 시작한다. `sys.exit()`는 이 루프가 정상적으로/비정상적으로 끝나는 것을 감지하는데 `sys.exit(0)`는 정상종료, 그 외의 non-zero exit는 비정상종료로 간주되어 error를 일으킨것으로 간주한다.
 
-#### 이벤트루프란?
+### 이벤트루프란?
 물론 이벤트 루프에 관한 개념이 없더라도 간단한 GUI프로그래밍을 하는 것은 큰 문제가 아닐지도 모른다. 하지만 중심을 관통하는 키 컨셉들을 이해해야, 제대로 된 Qt app을 구성할 수 있다. 
 
 이벤트 루프의 핵심은 `QApplication` 클래스에 있다. App이 기능하기위해서 꼭 필수적이며 오직 하나만 필요하다. 이 객체는 모든 GUI와 사용자간의 모든 상호작용을 관장한다.
 
 
 {% include figure image_path="/assets/images/2020-07-05-pyside2-create-app/img2.png" caption="window에서 Qt에서의 이벤트 " %}
+
+**QApplication Class**  
+`Qapplication`은 Qt Event Loop을 잡아둔다  
+하나의 `QApplication` 객체만 필요하다  
+액션이 취해지기 전까지 이벤트루프는 기다린다  
+언제든 단 하나의 이벤트 루프만 존재한다
+{: .notice--info}
+
 
 # 참고
 * This post was written based on Martin Fitzpatrick's Create GUI Applications with QT & Python - PySide2 [Official Link](www.learnpyqt.com){: .btn .btn--inverse}
