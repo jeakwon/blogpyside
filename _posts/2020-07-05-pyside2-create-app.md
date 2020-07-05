@@ -40,7 +40,8 @@ python main.py
 ```
 python3 main.py
 ```
-![](2020-07-05-pyside2-create-app-img1.png){width: 200px;}
+
+{% include figure image_path="2020-07-05-pyside2-create-app-img1.png" alt="" caption="This is a figure caption." %}
 
 # 참고
 * This post was written based on Martin Fitzpatrick's Create GUI Applications with QT & Python - PySide2 [Official Link](www.learnpyqt.com){: .btn .btn--inverse}
