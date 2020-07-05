@@ -94,7 +94,7 @@ analytics:
 # Site Author
 author:
   name             : "Jea Kwon"
-  avatar           : "/assets/images/cafe-fondant.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/cafe-fondant-black.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "cafe Fondant"
 #   location         : "Korea"
   email            :
