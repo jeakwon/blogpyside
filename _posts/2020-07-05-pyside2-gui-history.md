@@ -30,5 +30,5 @@ PySide2를 공부하기 전에 간단한 GUI의 역사를 알아보자.
 
 
 # 참고
-For details, go to
-[Martin Fitzpatrick](www.learnpyqt.com){: .btn .btn--inverse}
+**For details, go to**
+* [Martin Fitzpatrick](www.learnpyqt.com){: .btn .btn--inverse}
