@@ -7,7 +7,8 @@ tags:
   - qt
 toc: true
 ---
-[참고](www.learnpyqt.com)
+References for this post
+[Martin Fitzpatrick](www.learnpyqt.com){: .btn .btn--inverse}
 
 # PySide2 Intro
 ## Gui의 간단한 역사
