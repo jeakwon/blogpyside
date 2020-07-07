@@ -10,7 +10,7 @@ header:
   overlay_color: "#333"
 ---
 PySide2의 시그널&슬롯 작동원리 이해하기
-[소스코드](https://github.com/jeakwon/pyside2/tree/master/2.signal-and-slot){: .btn .btn--primary}
+[소스코드](https://github.com/jeakwon/pyside2/tree/master/2_signal_and_slot){: .btn .btn--primary}
 
 # Singal and Slot - QPushButton
 [전편](https://jeakwon.github.io/pyside2/pyside2-create-app/)에서 버튼 위젯으로 간단한 앱을 만들어 보았다.
