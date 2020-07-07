@@ -189,6 +189,7 @@ class MainWindow(QMainWindow):
 
         self.setCentralWidget(label)
 ```
+
 위 코드에서 `.setWindowTitle`, `.setFixedSize`, `.setCentralWidget` 이 세 가지는 메인 윈도우 위젯에 관한 것이다. 앱의 타이틀과 사이즈 그리고 메인 위젯을 설정하는 방법.
 
 2. Label 위젯
@@ -203,8 +204,8 @@ class MainWindow(QMainWindow):
 
         label.setFont(font)
         label.setAlignment(Qt.AlignHCenter | Qt.AlignVCenter)
-
 ```
+
 `QLabel`로 label 객체를 생성해주고 중략 되었지만, 중간에 font 객체를 생성한 뒤
 `.setFont`로 우리가 만든 폰트객체를 지정해준다. 그 후 label의 위치를 정하기 위해
 `.setAlignment`로 위치를 지정해준다. 이때 `Qt.AlignHCenter`, `Qt.AlignVCenter`는
