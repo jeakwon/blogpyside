@@ -177,7 +177,7 @@ app.exec_()
 ![](https://github.com/jeakwon/pyside2/blob/master/03_widgets/wid2.png){: .align-center}
 
 ### 살펴보기
-1. MainWindow 위젯
+#### 1. MainWindow 위젯
 ```python
 class MainWindow(QMainWindow):
     def __init__(self):
@@ -192,7 +192,7 @@ class MainWindow(QMainWindow):
 
 위 코드에서 `.setWindowTitle`, `.setFixedSize`, `.setCentralWidget` 이 세 가지는 메인 윈도우 위젯에 관한 것이다. 앱의 타이틀과 사이즈 그리고 메인 위젯을 설정하는 방법.
 
-2. Label 위젯
+#### 2. Label 위젯
 ```python
 class MainWindow(QMainWindow):
     def __init__(self):
@@ -225,7 +225,7 @@ VCenter: Vertical Center, 수직중앙)
 {: .notice--info}
 
 
-3. Label 위젯
+#### 3. font
 ```python
 class MainWindow(QMainWindow):
     def __init__(self):
