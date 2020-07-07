@@ -174,7 +174,7 @@ app.exec_()
 ```
 
 ### 결과
-![](https://github.com/jeakwon/pyside2/blob/master/03_widgets/wid2.png)  
+![](https://raw.githubusercontent.com/jeakwon/pyside2/master/03_widgets/wid2.png)  
 
 ### 살펴보기
 #### 1. MainWindow 위젯
@@ -281,7 +281,7 @@ window.show()
 app.exec_()
 ```
 ### 결과
-![image-center](https://github.com/jeakwon/pyside2/blob/master/03_widgets/wid3.png){: .align-center}
+![](https://raw.githubusercontent.com/jeakwon/pyside2/master/03_widgets/wid3.png)  
 ```
 2 True
 0 False
@@ -336,7 +336,7 @@ app.exec_()
 ```
 
 ### 결과
-![image-center](https://github.com/jeakwon/pyside2/blob/master/03_widgets/wid4.png){: .align-center}
+![](https://raw.githubusercontent.com/jeakwon/pyside2/master/03_widgets/wid4.png)  
 ```
 1 PartiallyChecked
 2 Checked
