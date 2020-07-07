@@ -117,7 +117,7 @@ app.exec_()
 ### 결과
 ```
 ```
-
+![](https://github.com/jeakwon/pyside2/raw/master/03_widgets/wid1.png)
 ### 설명
 ```python
 ```
