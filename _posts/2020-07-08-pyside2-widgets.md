@@ -174,7 +174,7 @@ app.exec_()
 ```
 
 ### 결과
-![](https://raw.githubusercontent.com/jeakwon/pyside2/master/03_widgets/wid2.png)  
+![](https://raw.githubusercontent.com/jeakwon/pyside2/master/03_widgets/wid2.png){: .align-center}  
 
 ### 살펴보기
 #### 1. MainWindow 위젯
