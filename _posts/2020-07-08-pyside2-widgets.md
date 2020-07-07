@@ -242,7 +242,7 @@ class MainWindow(QMainWindow):
 ```
 폰트는 이미 `QLabel`객체에 딸려있는 객체로, 생성한 객체에서 `.font()`를 통해 접근할 수 있다. 여기서는 접근한 폰트의 특성 중 네 가지(사이즈, 종류, 이텔릭, 밑줄)를 수정 해 보았다.
 
-## 2. QCheckBox
+## 3. QCheckBox
 체크박스 위젯은 말 그대로 체크표시를 할 수 있는 박스이며, 위젯이 자체적으로 체크가 되었는지 되지 않았는지 정보를 담는 역할을 할 수 있다고 보면 된다.
 ```python
 from PySide2.QtWidgets import QCheckBox
