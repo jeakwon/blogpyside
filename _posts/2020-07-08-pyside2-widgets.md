@@ -121,7 +121,7 @@ app.exec_()
 ```
 
 ### 결과
-![](https://raw.githubusercontent.com/jeakwon/pyside2/master/03_widgets/wid1.png)  
+![](https://raw.githubusercontent.com/jeakwon/pyside2/master/03_widgets/wid1.png){: .align-center}  
 위 사진에서 볼 수 있듯, Qt에 내장된 위젯은 형태 뿐만 아니라 기능적으로도
 파일접근, 날짜, 폰트, 색깔선택 등 상당히 유용하다. 이는 윈도우뿐만 아니라 MacOS, 리눅스에서도 같은 코드로 구동이 가능하다.
 
@@ -281,7 +281,7 @@ window.show()
 app.exec_()
 ```
 ### 결과
-![](https://raw.githubusercontent.com/jeakwon/pyside2/master/03_widgets/wid3.png)  
+![](https://raw.githubusercontent.com/jeakwon/pyside2/master/03_widgets/wid3.png){: .align-center}  
 ```
 2 True
 0 False
@@ -336,7 +336,7 @@ app.exec_()
 ```
 
 ### 결과
-![](https://raw.githubusercontent.com/jeakwon/pyside2/master/03_widgets/wid4.png)  
+![](https://raw.githubusercontent.com/jeakwon/pyside2/master/03_widgets/wid4.png){: .align-center}  
 ```
 1 PartiallyChecked
 2 Checked
