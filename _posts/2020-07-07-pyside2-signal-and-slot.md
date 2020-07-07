@@ -114,9 +114,10 @@ class MainWindow(QMainWindow):
     def btn_clicked(self, checked): # changed from sns1.py
         print("Clicked", checked) # changed from sns1.py
 ```
-`btn_clicked(self, checked)`는 시그널이 전송한 데이터가 접근할 argument로 `checked`를 추가해 준 것이다. 꼭 `checked`로 할 필요는 없다.  
+`btn_clicked(self, checked)`는 시그널이 전송한 데이터가 접근할 인수(argument)로 `checked`를 추가해 준 것이다. 꼭 `checked`로 할 필요는 없다.  
 
-결과를 보면, 수신된 데이터 `checked`가 `False`상태인데, 위젯과의 상호작용을 통해 위젯의`checked` status가 변하게 할 수 있다. 이것을 데이터 저장이라고 표현해 보겠다.
+결과를 보면, 수신된 데이터 `checked`가 `False`상태로, 현재 버튼이 눌렸을 때, 우리가 버튼의 상태에 영향을 주는 것은 아니다.
+우리는 버튼이 눌렸을 때, 위젯이 상태 변화를 일으키도록 할 수 있다. 다음을 보자.
 
 ## 3. 위젯의 상태 변환
 ### 소스코드
@@ -157,7 +158,9 @@ class MainWindow(QMainWindow):
         btn.setCheckable(True) # added from sns2.py
 ```
 
-`.setCheckable(True)`는 `btn`의 `checked` 상태를 변화시킬 수 있게 해준다. 디폴트값으로 False로 되어있다. 
+`.setCheckable(True)`는 `btn`의 `checked` 상태를 변화시킬 수 있게 해준다. 디폴트값으로 False로 되어있다.
+이렇게 위젯마다, 이미 내장된 어떤 상태변화를 감지하는 기능들이 있다. 이러한 기능들을 활용하면 과거에 이 위젯과
+사용자가 어떠한 상호작용을 일으켰는지 확인 할 수 있을 것이다.
 
 ## 4. 데이터 저장
 ### 소스코드
@@ -267,8 +270,15 @@ class MainWindow(QMainWindow):
         print(self.btn_checked)
 ```
 
-`btn.released.connect`는 `btn.clicked.connect`와는 다르게, 데이터를 수신하지 못하는 것을 
-`TypeError`를 통해 알 수 있다. 이는 `btn.released`라는 신호가 따로 송신한 데이터가 없기 때문이다.
+결과에서 `TypeError`가 발생한 것을 보면 checked라는 인수로 데이터를 수신하려고 한 `btn_toggled` 함수가 에러를
+일으켰다는 것을 알 수 있다. 이는 `.released`라는 시그널은 `.clicked`시그널과는 다르게 제공하는 데이터가 없기
+때문에 슬롯에서 받을 데이터가 없어서 발생하는 에러이다.
+
+**시그널의 두 가지 형태**
+@ 변화 및 데이터 두 가지가 있는 경우(ex. btn.clicekd): 이 경우에는 인수를 두지 않으면 변화만 감지하고, 인수를 두면 데이터까지 받을 수 있다.  
+@ 변화만 있는 경우(ex. btn.released): 이 경우에는 슬롯에 인수를 두면(=수신할 함수에 인수를 두게되면) 에러를 발생시킨다.
+
+{: .notice--warning}
 
 ## 6. 객체 상태 접근을 통한 우회
 ### 소스코드
