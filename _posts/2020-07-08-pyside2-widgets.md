@@ -10,7 +10,7 @@ header:
   overlay_color: "#333"
 ---
 PySide2의 위젯에 대하여 알아보자
-[소스코드](https://github.com/jeakwon/pyside2/tree/master/3_widgets){: .btn .btn--primary}
+[소스코드](https://github.com/jeakwon/pyside2/tree/master/03_widgets){: .btn .btn--primary}
 
 # Widgets
 [전편](https://jeakwon.github.io/pyside2/pyside2-signal-and-slot/)에서는 시그널&슬롯의 개념에 대하여 
