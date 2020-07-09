@@ -12,7 +12,7 @@ header:
 PySide2의 위젯에 대하여 알아보자
 [소스코드](https://github.com/jeakwon/pyside2/tree/master/03_widgets){: .btn .btn--primary}
 
-# 위젯이란?
+# 1. 위젯이란?
 [전편](https://jeakwon.github.io/pyside2/pyside2-signal-and-slot/)에서는 시그널&슬롯의 개념에 대하여 
 `QPushButton`위젯을 통해서 알아보았다. Qt에는 `QPushButton`이외에도 다양한 위젯들이 존재한다. 위젯이란
 **창 안에 존재하는 사용자가 상호작용할 수 있는 UI 컴포넌트**이다. Qt에서는 많은 종류의 위젯이 존재하고
