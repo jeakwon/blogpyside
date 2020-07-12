@@ -462,4 +462,4 @@ app.exec_()
 `.setTabsClosable`와 `.tabCloseRequested.connect(widget.removeTab)`을 이용하여 탭을 닫을 수 있게 해 준다.
 
 # 참고
-* This post was written based on Martin Fitzpatrick's Create GUI Applications with QT & Python - PySide2 [Official Link](www.learnpyqt.com){: .btn .btn--inverse}
+* This post was written based on Martin Fitzpatrick's Create GUI Applications with QT & Python - PySide2 [Official Link](https://www.learnpyqt.com/){: .btn .btn--inverse}
