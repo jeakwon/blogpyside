@@ -696,4 +696,4 @@ app.exec_()
 여기서도 똑같이 적용되는 것을 볼 수 있다. pressed와 released는 그 객체 자체에 대한 접근 시그널로 보면 되겠다.
 
 # 참고
-* This post was written based on Martin Fitzpatrick's Create GUI Applications with QT & Python - PySide2 [Official Link](www.learnpyqt.com){: .btn .btn--inverse}
+* This post was written based on Martin Fitzpatrick's Create GUI Applications with QT & Python - PySide2 [Official Link](https://www.learnpyqt.com/){: .btn .btn--inverse}
