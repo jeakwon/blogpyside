@@ -152,12 +152,10 @@ sys.exit(app.exec_())
 - 툴바와 똑같이, `.setStatusTip`을 통해 메뉴가 아닌 액션에 마우스가 올라가면 상태표시줄에서 상태팁을 표시 가능하다.
 
 **단축키(Short Cut)**  
-액션에는 `.setShortcut`로 단축키를 넣어줄 수 있다. 위에서 말한 텍스트 앞에 **&(ampersand)**를 
-사용하는 것 과는 다르게 `QtGui`>`QKeySequence`를 이용하여 직접 키 시퀀스를 정해 줄 수 있다. 
-사용방법은 세 가지 방식이 있다.
-@ 스탠다드 숏컷 : 플랫폼 특화된 키를 찾아준다. `QKeySequence(QKeySequence.Print)`  
-@ 커스텀 숏컷 : 인간이 읽을 수 있는 string. 예를들면 "Ctrl+P"같은 것. `QKeySequence("Ctrl+p")`  
-@ 하드코딩 숏컷 : Qt에서 정의한 키값. 예를들면 "Qt.CTRL + Qt.Key_P" `QKeySequence(Qt.CTRL + Qt.Key_P)`
+액션에는 `.setShortcut`로 단축키를 넣어줄 수 있다. 위에서 말한 텍스트 앞에 **&(ampersand)**를 사용하는 것 과는 다르게 `QtGui`>`QKeySequence`를 이용하여 직접 키 시퀀스를 정해 줄 수 있다. 사용방법은 세 가지 방식이 있다.  
+@ 스탠다드 숏컷 : 플랫폼 특화된 내장된 키. `QKeySequence(QKeySequence.Print)`  
+@ 커스텀 숏컷 : 인간이 읽을 수 있는 string. `QKeySequence("Ctrl+p")`  
+@ 하드코딩 숏컷 : Qt에서 정의한 키값. `QKeySequence(Qt.CTRL + Qt.Key_P)`
 {: .notice--info}
 
 
@@ -242,10 +240,10 @@ sys.exit(app.exec_())
 - `Qt.RightToolBarArea` Flag를 이용해 툴바의 위치를 오른쪽 세로로 지정해 주었다.
 
 **ToolBarArea Flags** 
-`QMainWindow().addToolBar(<flag>, QToolBar())`형태로 *flag*를 전달
+`QMainWindow().addToolBar(<flag>, QToolBar())`형태로 *flag*를 전달  
 @ `Qt.TopToolBarArea` : 상단에 툴바를 추가한다 (디폴트)  
-@ `Qt.BottomToolBarArea` : 하단에 툴바를 추가한다
-@ `Qt.LeftToolBarArea` : 왼쪽에 툴바를 추가한다
+@ `Qt.BottomToolBarArea` : 하단에 툴바를 추가한다  
+@ `Qt.LeftToolBarArea` : 왼쪽에 툴바를 추가한다  
 @ `Qt.RightToolBarArea` : 오른쪽에 툴바를 추가한다
 {: .notice--info}
 
