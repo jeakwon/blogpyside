@@ -330,4 +330,5 @@ class MainWindow(QMainWindow):
 효과를 낼 수가 있다.
 
 # 참고
-* This post was written based on Martin Fitzpatrick's Create GUI Applications with QT & Python - PySide2 [Official Link](www.learnpyqt.com){: .btn .btn--inverse}
+* This post was written based on Martin Fitzpatrick's Create GUI Applications with QT & Python - PySide2 [Official Link](https://www.learnpyqt.com/){: .btn .btn--inverse}
+
