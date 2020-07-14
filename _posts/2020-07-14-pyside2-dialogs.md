@@ -61,10 +61,9 @@ if __name__ == "__main__":
     sys.exit(app.exec_())
 ```
 
-## 결과
+## 결과 및 설명
 ![](https://raw.githubusercontent.com/jeakwon/pyside2/master/06_dialogs/dlg1.gif){: .align-center}
 
-## 설명
 - 먼저 `QDialog` Widget을 생성하면 깡통 대화상자가 등장한다. 이 때 메인윈도우를 등지고 있는데, 
 대화상자가 생성되면 부모 위젯과는 소통이 불가능해지는 모달 상태가 된다. 메인윈도우에 타이틀을 
 붙여준 것 처럼 `setWindowTitle`을 통해 타이틀을 부여해 줄 수 있다.
@@ -78,32 +77,29 @@ if __name__ == "__main__":
 
 **Buttons for QDialogButtonBox**  
 아래는 사용가능한 버튼의 종류와 버튼이 정의하는 역할  
-@ `QDialogButtonBox.Ok` AcceptRole
-@ `QDialogButtonBox.Open` AcceptRole
-@ `QDialogButtonBox.Save` AcceptRole
-@ `QDialogButtonBox.Cancel` RejectRole
-@ `QDialogButtonBox.Close` RejectRole
-@ `QDialogButtonBox.Discard` DestructiveRole
-@ `QDialogButtonBox.Apply` ApplyRole
-@ `QDialogButtonBox.Reset` ResetRole
-@ `QDialogButtonBox.RestoreDefaults` ResetRole
-@ `QDialogButtonBox.Help` HelpRole
-@ `QDialogButtonBox.SaveAll` AcceptRole
-@ `QDialogButtonBox.Yes` YesRole
-@ `QDialogButtonBox.YesToAll` YesRole
-@ `QDialogButtonBox.No` NoRole
-@ `QDialogButtonBox.NoToAll` NoRole
-@ `QDialogButtonBox.Abort` RejectRole
-@ `QDialogButtonBox.Retry` AcceptRole
-@ `QDialogButtonBox.Ignore` AcceptRole
+@ `QDialogButtonBox.Ok` AcceptRole  
+@ `QDialogButtonBox.Open` AcceptRole  
+@ `QDialogButtonBox.Save` AcceptRole  
+@ `QDialogButtonBox.Cancel` RejectRole  
+@ `QDialogButtonBox.Close` RejectRole  
+@ `QDialogButtonBox.Discard` DestructiveRole  
+@ `QDialogButtonBox.Apply` ApplyRole  
+@ `QDialogButtonBox.Reset` ResetRole  
+@ `QDialogButtonBox.RestoreDefaults` ResetRole  
+@ `QDialogButtonBox.Help` HelpRole  
+@ `QDialogButtonBox.SaveAll` AcceptRole  
+@ `QDialogButtonBox.Yes` YesRole  
+@ `QDialogButtonBox.YesToAll` YesRole  
+@ `QDialogButtonBox.No` NoRole  
+@ `QDialogButtonBox.NoToAll` NoRole  
+@ `QDialogButtonBox.Abort` RejectRole  
+@ `QDialogButtonBox.Retry` AcceptRole  
+@ `QDialogButtonBox.Ignore` AcceptRole  
 @ `QDialogButtonBox.NoButton` Invalid Button
 {: .notice--info}
 
 **QPushButton대신 QDialogButtonBox을 사용하는 이유**  
-`QPushButton`을 레이아웃에 넣어도 충분히 기능 구현은 가능하지만, QDialogButtonBox가 제공하는 
-방식은 사용자(호스트데스크톱)의 작업환경 표준조건을 따르기 위함이다. 가령, 버튼의 위치가 좌측인지 
-오른쪽인지와 같은 것을 들 수 있다. 따라서 Qt에서는 QDialogButtonBox를 이용하여 커스터마이징을 
-하는 것을 권장하고 있다.
+`QDialogButtonBox`대신 `QPushButton`을 레이아웃에 넣어도 기능 구현이 가능하지만, Qt는 앱이 구동되는 호스트 데스크톱의 표준을 따르기 위해 `QDialogButtonBox`를 사용을 권장한다. 가령, 버튼의 위치가 좌측인지 우측인지와 같은 것들은 데스크톱 환경에따라 다르기 때문이다.
 {: .notice--warning}
 
 # 2. QDialog - 커스터마이징
@@ -152,11 +148,10 @@ if __name__ == "__main__":
     sys.exit(app.exec_())
 ```
 
-## 결과
+## 결과 및 설명
 ![](https://raw.githubusercontent.com/jeakwon/pyside2/master/06_dialogs/dlg2.gif){: .align-center}
 
-## 설명
-- 최종적으로 모습은 **dlg1.py**와 똑같지만 `QDialog`를 상속받은 독립적인 `Dialog`
+- 최종적인 앱의 모습은 *dlg1.py*와 똑같지만 `QDialog`를 상속받은 독립적인 `Dialog`
 서브클래스를 생성하여 반복적인 사용이 가능한 형태가 되었다.
 - `QLabel`위젯을 만들어서 `Qt.AlignCenter`를 통해 텍스트를 중앙에 위치 시키고, 
 레이아웃에 추가해준다.
@@ -208,10 +203,9 @@ if __name__ == "__main__":
     sys.exit(app.exec_())
 ```
 
-## 결과
+## 결과 및 설명
 ![](https://raw.githubusercontent.com/jeakwon/pyside2/master/06_dialogs/dlg3.gif){: .align-center}
 
-## 설명
 ```python
         btns = QDialogButtonBox.Ok|QDialogButtonBox.Cancel
         btnbox = QDialogButtonBox(btns)
@@ -223,7 +217,7 @@ if __name__ == "__main__":
 연결시킨다. 
 - `QDialog`는 `AcceptRole`과 `RejectRole`이 발생되면 `.exec_()`으로 이벤트 루프를 돌던 
 모달 창이 종료되면서 0 또는 1을 반환한다. 이를 이용해 성공적으로 루프가 종료되었는지 print문 
-안에 한 줄로 구현하면 아래와 같다. ~~*Pythonic*~~
+안에 한 줄로 구현하면 아래와 같다. ~~(Pythonic!)~~
 ```python
 print("Ok" if dialog.exec_() else "Cancel")
 ```
@@ -267,10 +261,9 @@ if __name__ == "__main__":
     sys.exit(app.exec_())
 ```
 
-## 결과
+## 결과 및 설명
 ![](https://raw.githubusercontent.com/jeakwon/pyside2/master/06_dialogs/dlg4.gif){: .align-center}
 
-## 설명
 - 먼저 `QMessageBox`로 대화상자를 만든다.
 - `.setWindowTitle`로 메인 윈도우의 타이틀을 지정했던것과 똑같이 대화상자 타이틀을 정할 수 있다.
 - `.setText`로 메세지를 전달할 수 있다.
@@ -323,10 +316,9 @@ if __name__ == "__main__":
     sys.exit(app.exec_())
 ```
 
-## 결과
+## 결과 및 설명
 ![](https://raw.githubusercontent.com/jeakwon/pyside2/master/06_dialogs/dlg5.gif){: .align-center}
 
-## 설명
 - 한줄요약: `QMessageBox.question(self, <타이틀>, <메세지>)` 내장 대화상자를 이용하면 부모 
 위젯인 `self`와 타이틀, 메세지만 전달하여 간단하게 만들 수 있다.
 
@@ -372,10 +364,9 @@ if __name__ == "__main__":
     sys.exit(app.exec_())
 ```
 
-## 결과
+## 결과 및 설명
 ![](https://raw.githubusercontent.com/jeakwon/pyside2/master/06_dialogs/dlg6.gif){: .align-center}
 
-## 설명
 ```python
 for type_ in ['about','critical','information','question','warning']:
     btn = QPushButton(type_)
@@ -393,7 +384,7 @@ for type_ in ['about','critical','information','question','warning']:
 - `lambda x=type_`으로 매 루프마다 위와같은 함수를 생성하여 연결해 주는 것.
 - (심화)이 방식은 `.pressed`에는 작동하지만 `.clicked`에는 작동하지 않는다. 이에 대해서는 간략하게만 
 설명하면, `.pressed`는 시그널을 발생시키지 않지만, `.clicked`는 디폴트로 `Boolean` 시그널을 
-발생시키기 때문. ~~*자세한 내용이 궁금하면 따로 문의*~~
+발생시키기 때문.
 
 # 7. 대화상자와 메모리누수(Memory Leak)
 일단 간단하게 요약하면, `QDialog`와 `QMessageBox`은 모달윈도우로써, 대화상자 객체를
@@ -401,7 +392,7 @@ for type_ in ['about','critical','information','question','warning']:
 전달하는 당연한 행위가, 어플리케이션의 메모리누수를 촉발시킨다. 소스코드와 결과를 보고 
 이야기를 이어나가보겠다.
 ## 7-1. 메모리 누수 발생 이유
-### 소스코드1
+### 소스코드
 **dlg7.py**
 ```python
 import sys
@@ -435,10 +426,9 @@ app.exec_()
 print('\n'.join(repr(w) for w in app.allWidgets()))
 ```
 
-### 결과
+### 결과 및 설명
 ![](https://raw.githubusercontent.com/jeakwon/pyside2/master/06_dialogs/dlg7.gif){: .align-center}
 
-### 설명
 결과를 보면 충격적이게도, `QMessageBox(self)`를 하는 것과 `QMessagebox()`를 하는 것에 메모리 누수에 큰
 차이가 발생한다. `with_parent` 결과를 보면, 즉 부모를 전달하는 경우, 메세지박스로 생성된 객체들이 어플리케이션이 끝나도
 전혀 삭제되어지지 않는 것을 볼 수 있다. 이 것은 다른말로 대화상자가 많이 발생하는 경우(설령 종료했다 하더라도), 
@@ -484,10 +474,9 @@ if __name__ == "__main__":
     print('\n'.join(repr(w) for w in app.allWidgets()))
 ```
 
-### 결과
+### 결과 및 설명
 ![](https://raw.githubusercontent.com/jeakwon/pyside2/master/06_dialogs/dlg8.gif){: .align-center}
 
-### 설명
 결과를 보면, `QMessageBox.question(self, "title", "message")`처럼 내장위젯을 이용하면 메모리 누수없이 동작이
 되는 것을 확인 할 수 있다. 이는 `question`뿐만아니라 `about`, `critical`, `information`, `warning` 모두
 적용되는 사항이다. 이러한 차이를 만들어 내는 가장 큰 차이점으로 짐작이 가는 것은 아무래도 `.exec_()`의 사용유무.
@@ -531,10 +520,9 @@ app.exec_()
 print('\n'.join(repr(w) for w in app.allWidgets()))
 ```
 
-### 결과
-![](https://raw.githubusercontent.com/jeakwon/pyside2/master/06_dialogs/dlg8.gif){: .align-center}
+### 결과 및 설명
+![](https://raw.githubusercontent.com/jeakwon/pyside2/master/06_dialogs/dlg9.gif){: .align-center}
 
-### 설명
 ```python
         dialog = QMessageBox(self)
         dialog.deleteLater()
