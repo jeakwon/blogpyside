@@ -66,7 +66,7 @@ app.exec_()
 ```
 
 ## 결과 및 설명
-![](https://raw.githubusercontent.com/jeakwon/pyside2/master/07_dialogs/win1a.gif){: .align-center}
+![](https://raw.githubusercontent.com/jeakwon/pyside2/master/07_windows/win1a.gif){: .align-center}
 ```python
     def create_without_reference(self):
         w = NewWindow()
@@ -77,7 +77,7 @@ app.exec_()
 즉각적으로 클린업하여 창은 소멸되게 된다. (아무래도 레퍼런싱을 하지 않으면 이벤트루프에서 생성된 창을 관리하지
 못하는 것으로 생각됨)
 
-![](https://raw.githubusercontent.com/jeakwon/pyside2/master/07_dialogs/win1b.gif){: .align-center}
+![](https://raw.githubusercontent.com/jeakwon/pyside2/master/07_windows/win1b.gif){: .align-center}
 ```python
     def create_with_reference(self):
         self.w = NewWindow()
@@ -141,7 +141,7 @@ win.show()
 app.exec_()
 ```
 ## 결과 및 설명
-![](https://raw.githubusercontent.com/jeakwon/pyside2/master/07_dialogs/win2a.gif){: .align-center}
+![](https://raw.githubusercontent.com/jeakwon/pyside2/master/07_windows/win2a.gif){: .align-center}
 ```python
     def create_new_window(self):
         if self.w1 is None:
@@ -153,7 +153,7 @@ app.exec_()
 ```
 - 창을 닫는데 필요한 메소드는 `.close()`이다. 여기서 창을 새롭게 생성하는 것이 매번 윈도우 숫자가 바뀌는 것을
 통해서 알 수가 있다. 이는 윈도우를 닫은 뒤 `self.w1 = None`으로 레퍼런스를 초기화 해줬기 때문이다.
-![](https://raw.githubusercontent.com/jeakwon/pyside2/master/07_dialogs/win2b.gif){: .align-center}
+![](https://raw.githubusercontent.com/jeakwon/pyside2/master/07_windows/win2b.gif){: .align-center}
 ```python
     def show_existing_window(self):
         if self.w2.isVisible()==False:
@@ -215,7 +215,7 @@ app.exec_()
 ```
 
 ## 결과 및 설명
-![](https://raw.githubusercontent.com/jeakwon/pyside2/master/07_dialogs/win3.gif){: .align-center}
+![](https://raw.githubusercontent.com/jeakwon/pyside2/master/07_windows/win3.gif){: .align-center}
 ```python
     def show_window_without_signal(self):
         if self.w.isVisible()==False:
@@ -286,7 +286,7 @@ win.show()
 app.exec_()
 ```
 ## 결과 및 설명
-![](https://raw.githubusercontent.com/jeakwon/pyside2/master/07_dialogs/win4.gif){: .align-center}
+![](https://raw.githubusercontent.com/jeakwon/pyside2/master/07_windows/win4.gif){: .align-center}
 ```python
     def without_delete_on_close(self, checked):
         # ...
@@ -361,7 +361,7 @@ win.show()
 app.exec_()
 ```
 ## 결과 및 설명
-![](https://raw.githubusercontent.com/jeakwon/pyside2/master/07_dialogs/win5.gif){: .align-center}
+![](https://raw.githubusercontent.com/jeakwon/pyside2/master/07_windows/win5.gif){: .align-center}
 ```python
     def show_and_close(self):
         if self.w.isVisible():
