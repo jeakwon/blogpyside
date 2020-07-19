@@ -153,6 +153,7 @@ app.exec_()
 ```
 - 창을 닫는데 필요한 메소드는 `.close()`이다. 여기서 창을 새롭게 생성하는 것이 매번 윈도우 숫자가 바뀌는 것을
 통해서 알 수가 있다. 이는 윈도우를 닫은 뒤 `self.w1 = None`으로 레퍼런스를 초기화 해줬기 때문이다.
+
 ![](https://raw.githubusercontent.com/jeakwon/pyside2/master/07_windows/win2b.gif){: .align-center}
 ```python
     def show_existing_window(self):
